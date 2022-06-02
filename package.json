@@ -1,10 +1,17 @@
 {
-  "name": "@causaly/typescript-pkg-template",
-  "version": "0.0.0",
-  "description": "Typescript package template",
-  "author": "Causaly Team <front-end@causaly.com>",
-  "license": "UNLICENSED",
-  "private": true,
+  "name": "@causaly/fp-ts-jest-matchers",
+  "version": "0.0.1",
+  "description": "Collection of monad matchers to ease testing with Jest",
+  "keywords": [
+    "fp-ts",
+    "jest"
+  ],
+  "author": {
+    "name": "Causaly Team",
+    "email": "front-end@causaly.com",
+    "url": "https://www.causaly.com"
+  },
+  "license": "MIT",
   "sideEffects": false,
   "types": "./build/index.d.ts",
   "main": "./build/node/cjs/index.js",
@@ -74,5 +81,8 @@
   },
   "peerDependencies": {
     "@swc/helpers": "^0.3.2"
+  },
+  "dependencies": {
+    "fp-ts": "^2.12.1"
   }
 }

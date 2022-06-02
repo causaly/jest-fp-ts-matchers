@@ -1,22 +1,41 @@
-# Typescript-pkg-template
+# fp-ts-jest-matchers
 
-Simple Typescript template to quickstart your next project
+Collection of monad matchers to ease testing with Jest
 
-## Instructions
+## Installation
 
-- Click the `Use this template` button
-- Configure SWC. You can find the configuration files under `/config`
-- Update the appropriate metadata in `package.json`, depending on the environments you'll use
-- Write your code under `/lib`
+```bash
+npm install -D fp-ts-jest-matchers
+```
 
-## Notes
+## Quick start
 
-The package by default exports artifacts for both browser & node environments
+```typescript
+import { expectLeftEither } from 'fp-ts-jest-matchers';
 
-## Publishing
+test('throws parsing fails', () => {
+  pipe(
+    Parser.parse({ id: '' }),
+    expectLeftEither((err) => {
+      expect(err).toBeInstanceOf(Error);
+      expect(err.message).toMatch(/001/);
+    })
+  );
+});
+```
 
-The repo is using changesets and the accompanying GitHub action to handle versioning, keeping a changelong and publishing to NPM. 
-You can read more about the changesets package [here](https://github.com/changesets/changesets).
+## Exported methods
+
+- `expectLeftEither`
+- `expectRightEither`
+- `expectLeftTaskEither`
+- `expectRightTaskEither`
+- `expectSomeOption`
+- `expectNoneOption`
+
+#### Requirements
+
+- Node.js v.14+
 
 ## License
 
