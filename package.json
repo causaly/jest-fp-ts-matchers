@@ -11,6 +11,10 @@
     "email": "front-end@causaly.com",
     "url": "https://www.causaly.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/causaly/jest-fp-ts-matchers.git"
+  },
   "license": "MIT",
   "sideEffects": false,
   "types": "./build/index.d.ts",
