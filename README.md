@@ -1,17 +1,17 @@
-# fp-ts-jest-matchers
+# jest-matchers-fp-ts
 
 Collection of monad matchers to ease testing with Jest
 
 ## Installation
 
 ```bash
-npm install -D fp-ts-jest-matchers
+npm install -D jest-matchers-fp-ts
 ```
 
 ## Quick start
 
 ```typescript
-import { expectLeftEither } from 'fp-ts-jest-matchers';
+import { expectLeftEither } from 'jest-matchers-fp-ts';
 
 test('throws when parsing fails', () => {
   pipe(
