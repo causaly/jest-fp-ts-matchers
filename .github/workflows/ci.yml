@@ -4,8 +4,8 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
 
-# env:
-#   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   block-autosquash:
