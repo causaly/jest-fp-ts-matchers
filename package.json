@@ -1,5 +1,5 @@
 {
-  "name": "@causaly/fp-ts-jest-matchers",
+  "name": "fp-ts-jest-matchers",
   "version": "0.0.1",
   "description": "Collection of monad matchers to ease testing with Jest",
   "keywords": [
