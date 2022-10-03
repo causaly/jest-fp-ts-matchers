@@ -13,7 +13,7 @@ npm install -D jest-fp-ts-matchers
 ```typescript
 import { expectLeftEither } from 'jest-fp-ts-matchers';
 
-test('throws when parsing fails', () => {
+test('returns left Either when parsing fails', () => {
   pipe(
     Parser.parse({ id: '' }),
     expectLeftEither((err) => {
@@ -28,6 +28,8 @@ test('throws when parsing fails', () => {
 
 - `expectLeftEither`
 - `expectRightEither`
+- `expectLeftΙΟEither`
+- `expectRightΙΟEither`
 - `expectLeftTaskEither`
 - `expectRightTaskEither`
 - `expectSomeOption`
