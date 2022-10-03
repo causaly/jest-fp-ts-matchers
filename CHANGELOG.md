@@ -1,5 +1,11 @@
 # jest-fp-ts-matchers
 
+## 0.2.1
+
+### Patch Changes
+
+- f2e6323: Add IOEither methods to README.md
+
 ## 0.2.0
 
 ### Minor Changes
