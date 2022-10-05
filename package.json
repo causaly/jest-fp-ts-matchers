@@ -11,11 +11,30 @@
     "email": "front-end@causaly.com",
     "url": "https://www.causaly.com"
   },
+  "contributors": [
+    {
+      "name": "Nikos Kalogridis",
+      "url": "https://github.com/nikoskalogridis"
+    },
+    {
+      "name": "Dimitrios Lytras",
+      "email": "dnlytras@gmail.com",
+      "url": "https://github.com/dimitrisnl"
+    },
+    {
+      "name": "Dimitrios C. Michalakos",
+      "email": "dimitris@jmike.gr",
+      "url": "https://github.com/jmike"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/causaly/jest-fp-ts-matchers.git"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "types": "./build/index.d.ts",
   "main": "./build/node/cjs/index.js",
