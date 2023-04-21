@@ -1,6 +1,6 @@
 {
   "name": "jest-fp-ts-matchers",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Collection of monad matchers to ease testing with Jest",
   "keywords": [
     "fp-ts",
