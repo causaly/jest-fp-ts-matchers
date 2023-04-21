@@ -37,7 +37,7 @@ test('returns left Either when parsing fails', () => {
 
 #### Requirements
 
-- Node.js v.14+
+- Node.js v.16+
 
 ## License
 
