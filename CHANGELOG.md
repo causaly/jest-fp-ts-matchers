@@ -1,5 +1,11 @@
 # jest-fp-ts-matchers
 
+## 0.2.2
+
+### Patch Changes
+
+- c4d37b5: move @swc/helpers to devDependencies
+
 ## 0.2.1
 
 ### Patch Changes
