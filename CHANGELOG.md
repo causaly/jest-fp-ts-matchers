@@ -1,5 +1,11 @@
 # jest-fp-ts-matchers
 
+## 0.2.4
+
+### Patch Changes
+
+- c1b2aaf: Switch to using tsc only for building the module
+
 ## 0.2.3
 
 ### Patch Changes
