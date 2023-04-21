@@ -34,8 +34,8 @@
     "build": "rimraf dist && concurrently \"npm run build:types\" \"npm run build:esm\" \"npm run build:cjs\"",
     "lint": "eslint lib --ext .ts",
     "format": "prettier --config ./.prettierrc --ignore-path .gitignore -w .",
-    "test": "jest",
-    "coverage": "jest --coverage",
+    "test": "jest --config jest.config.ts",
+    "coverage": "jest --config jest.config.ts --coverage",
     "changeset": "changeset",
     "prerelease": "npm run build && npm run test",
     "release": "changeset publish"
