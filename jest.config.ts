@@ -1,11 +1,9 @@
 import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
-  verbose: true,
+  preset: 'ts-jest',
+  collectCoverageFrom: ['lib/**/*.{js,ts}'],
   testRegex: './lib/.*\\.(test|spec)\\.(js|ts)$',
-  transform: {
-    '^.+\\.ts?$': 'ts-jest',
-  },
 };
 
 export default config;
