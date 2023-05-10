@@ -32,6 +32,8 @@ test('returns left Either when parsing fails', () => {
 - `expectRightΙΟEither`
 - `expectLeftTaskEither`
 - `expectRightTaskEither`
+- `expectLeftReaderTaskEither`
+- `expectRightReaderTaskEither`
 - `expectSomeOption`
 - `expectNoneOption`
 
