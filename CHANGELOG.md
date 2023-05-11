@@ -1,5 +1,11 @@
 # jest-fp-ts-matchers
 
+## 0.3.0
+
+### Minor Changes
+
+- 8d1a565: Add matchers for ReaderTaskEither
+
 ## 0.2.4
 
 ### Patch Changes
