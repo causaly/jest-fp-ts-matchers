@@ -1,5 +1,11 @@
 # jest-fp-ts-matchers
 
+## 0.4.0
+
+### Minor Changes
+
+- ea99692: add support for `ReaderEither` monad
+
 ## 0.3.0
 
 ### Minor Changes
