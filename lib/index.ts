@@ -1,6 +1,9 @@
 export { expectLeftEither } from './expectLeftEither';
 export { expectRightEither } from './expectRightEither';
 
+export { expectLeftReaderEither } from './expectLeftReaderEither';
+export { expectRightReaderEither } from './expectRightReaderEither';
+
 export { expectLeftTaskEither } from './expectLeftTaskEither';
 export { expectRightTaskEither } from './expectRightTaskEither';
 
