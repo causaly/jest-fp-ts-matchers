@@ -1,5 +1,11 @@
 # jest-fp-ts-matchers
 
+## 0.4.1
+
+### Patch Changes
+
+- ae562da: chore: update babel/traverse dependency
+
 ## 0.4.0
 
 ### Minor Changes
