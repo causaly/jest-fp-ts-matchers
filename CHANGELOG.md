@@ -1,5 +1,11 @@
 # jest-fp-ts-matchers
 
+## 0.5.0
+
+### Minor Changes
+
+- 4e3e2c9: Fix security issues through transitive usage of braces
+
 ## 0.4.1
 
 ### Patch Changes
