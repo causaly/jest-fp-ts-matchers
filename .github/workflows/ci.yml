@@ -19,23 +19,21 @@ jobs:
     if: github.event.pull_request.draft == false
     name: build
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x]
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
+      - uses: actions/checkout@v4
 
-      - uses: actions/cache@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+
+      - uses: actions/cache@v4
         id: npm-cache
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json', '.nvmrc') }}
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: '**/build'
           key: ${{ runner.os }}-build-${{ github.sha }}
@@ -51,23 +49,21 @@ jobs:
     name: test:unit
     needs: build
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x]
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
+      - uses: actions/checkout@v4
 
-      - uses: actions/cache@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+
+      - uses: actions/cache@v4
         id: npm-cache
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json', '.nvmrc') }}
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: '**/build'
           key: ${{ runner.os }}-build-${{ github.sha }}
